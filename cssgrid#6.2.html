@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Alignements | Align Items</title>
+    <style>
+      html
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+      }
+
+      .container {
+        width: 80px;
+        height: 700px;
+        margin:  auto;
+        display: grid;
+       grid-template-rows: 80px 80px;
+       grid-template-columns: 120px 180px 120px;
+       gap: 5px;
+      /* justify-content: center;
+      /* align-content: space-evenly;
+       align-content: start;
+       align-content: end;
+       align-content: stretch;
+       align-content: space-around;
+       align-content: space-between; */
+       place-content: space-evenly space-between;
+
+        
+      }
+
+      .item {
+       border: 3px solid black;
+       width: 100px;
+       height: 50px;
+       background-color: lightblue;
+       justify-content: end;
+      }
+
+      .item.i1,
+      .item.i4,
+      .item.i7 {
+      /* height: 100px;*/
+      }
+
+      .item.i2,
+      .item.i5,
+      .item.i8 {
+       /* height: 80px;*/
+      }
+
+      .item.i3,
+      .item.i6,
+      .item.i9 {
+       /* height: 120px;*/
+      }
+
+
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item i1">1</div>
+      <div class="item i2">2</div>
+      <div class="item i3">3</div>
+      <div class="item i4">4</div>
+      <div class="item i5">5</div>
+      <div class="item i6">6</div>
+      <div class="item i7">7</div>
+      <div class="item i8">8</div>
+      <div class="item i9">9</div> 
+    </div>
+  </body>
+</html>
